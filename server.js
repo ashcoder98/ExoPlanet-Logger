@@ -10,6 +10,7 @@ const PORT = process.env.PORT
 const mongoose = require('mongoose')
 const DATABASE_URL = process.env.DATABASE_URL
 const morgan = require('morgan')
+const methodOverride = require('method-override')
 
 // ====================================
 //         DATABASE CONNECTION
@@ -25,7 +26,7 @@ db.on('connected', ()=> console.log("Mongo connected!"))
 app.use(morgan('dev'));
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
-// app.use(methodOverride('_method'));
+app.use(methodOverride('_method'));
 
 // ====================================
 //              CONTROLLER

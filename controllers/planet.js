@@ -6,23 +6,27 @@ const Planet = require('../models/planets')
 //              ROUTES
 // ====================================
 ///////////// INDEX ROUTE ////////////////
-planetRouter.get('/', (req, res)=>{
-    Planet.find({}, (error, allPlanets)=>{
+planetRouter.get('/', (req, res) => {
+    Planet.find({}, (error, allPlanets) => {
         res.render('index.ejs', {
             planets: allPlanets,
         })
     })
 })
 ///////////// NEW ROUTE ////////////////
-planetRouter.get('/new', (req, res)=>{
+planetRouter.get('/new', (req, res) => {
     res.render('new.ejs')
 })
 ///////////// DELETE ROUTE ////////////////
-
+planetRouter.delete('/:id', (req, res)=>{
+    Planet.findByIdAndRemove(req.params.id, (error, deletion)=>{
+        res.redirect('/exoplanets')
+    })
+})
 ///////////// UPDATE ROUTE ////////////////
 
 ///////////// CREATE ROUTE ////////////////
-planetRouter.post('/', (req, res)=>{
+planetRouter.post('/', (req, res) => {
     if (req.body.water === "on") {
         req.body.water = true
     } else {
@@ -33,15 +37,15 @@ planetRouter.post('/', (req, res)=>{
     } else {
         req.body.habitable = false
     }
-    Planet.create(req.body, (error, newPlanet)=>{
+    Planet.create(req.body, (error, newPlanet) => {
         res.redirect('/exoplanets')
     })
 })
 ///////////// EDIT ROUTE ////////////////
 
 ///////////// SHOW ROUTE ////////////////
-planetRouter.get('/:id', (req ,res)=>{
-    Planet.findById(req.params.id, (error, foundPlanet)=>{
+planetRouter.get('/:id', (req, res) => {
+    Planet.findById(req.params.id, (error, foundPlanet) => {
         res.render('show.ejs', {
             planet: foundPlanet,
         })

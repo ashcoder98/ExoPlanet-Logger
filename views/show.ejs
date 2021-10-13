@@ -10,10 +10,12 @@
     <header><%=planet.name%>
         <form action="/exoplanets/<%=planet._id%>?_method=DELETE" method="POST">
             <input type="submit" value="DELETE"/>
-     </form></header>
+     </form>
+     <a href="/exoplanets/<%=planet._id%>/edit"><button>EDIT</button></a>
+    </header>
     <h2>Planet Environment: <%=planet.environment%></h2>
-    <h2>Planet Inhabitants: <%=planet.lifeforms%></h2>
-    <h2>Liquid Water Confirmed: <%=planet.water%></h2>
-    <h2>Planet is in the habitable(Goldilocks) zone: <%=planet.habitable%></h2>
+    <h2>Planet Lifeforms: <%=planet.lifeforms%></h2>
+    <h2>Liquid Water: <%=planet.water%></h2>
+    <h2>Habitable (Goldilocks) zone: <%=planet.habitable%></h2>
 </body>
 </html>

@@ -24,7 +24,22 @@ planetRouter.delete('/:id', (req, res)=>{
     })
 })
 ///////////// UPDATE ROUTE ////////////////
-
+planetRouter.put('/:id', (req, res)=>{
+    if (req.body.water === "on") {
+        req.body.water = true
+    } else {
+        req.body.water = false
+    }
+    if (req.body.habitable === "on") {
+        req.body.habitable = true
+    } else {
+        req.body.habitable = false
+    }
+    Planet.findByIdAndUpdate(req.params.id, req.body, (error, updatePlanet)=>{
+        res.redirect(`/exoplanets/${req.params.id}`)
+        ;
+    });
+});
 ///////////// CREATE ROUTE ////////////////
 planetRouter.post('/', (req, res) => {
     if (req.body.water === "on") {
@@ -42,7 +57,13 @@ planetRouter.post('/', (req, res) => {
     })
 })
 ///////////// EDIT ROUTE ////////////////
-
+planetRouter.get('/:id/edit', (req, res)=>{
+    Planet.findById(req.params.id, (error, foundPlanet)=>{
+        res.render('edit.ejs', {
+            planet: foundPlanet,
+        })
+    })
+})
 ///////////// SHOW ROUTE ////////////////
 planetRouter.get('/:id', (req, res) => {
     Planet.findById(req.params.id, (error, foundPlanet) => {

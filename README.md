@@ -7,6 +7,8 @@ An app to record to your exoplanet discoveries.
 - Javascript
 - Markdown
 - <https://fonts.google.com>
+- <https://unsplash.com/>
+- <https://fontawesome.com/>
 
 ## Screenshots
 ![Live Server Screenshot](./img/Homepage.png)
@@ -14,8 +16,8 @@ An app to record to your exoplanet discoveries.
 ![Live Server Screenshot](./img/Create-route.png)
 ![Live Server Screenshot](./img/Edit-route.png)
 
-
 ## Deployed App Link
 
 ## Enhancements for the future
-Have a random exo-planet picture be displayed everytime you create or edit a planet.
+-Have a random exo-planet picture be displayed everytime you create or edit a planet.
+-Authentication to create/edit a planet

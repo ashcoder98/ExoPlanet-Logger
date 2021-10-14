@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExoPlanet List</title>
+    <link rel="stylesheet" href="style.css"
 </head>
 
 <body>
-    <header>ExoPlanets Discovered...</header>
-    <a href="/exoplanets/new">Log Your Discovery Here</a>
-    <div>
+
+    <header>
+        <nav>
+        <h1>ExoPlanet Logger<h1>
+        <a id="link" href="/exoplanets/new">Log Your Discovery Here</a>
+    </nav>
+</header>
+    <div class="planetlist">
         <% planets.forEach(planet => { %>
         <div class="planet">
             <a href="/exoplanets/<%=planet._id; %>">

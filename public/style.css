@@ -7,18 +7,22 @@ body {
     background-image: url("https://i.imgur.com/BVUc0DZ.jpg");
     background-size: cover;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     background-color: black;
     padding: 30px 10%;
-    opacity: .7;
+    opacity: .75;
 }
 header {
     align-items: center;
    
     color: rgba(255, 255,255, 1)
 }
+/* .main {
+    font-size: 45px;
+} */
 #link {
     color: rgba(255, 255,255, 1);
     transition: all 0.3s ease 0s;
@@ -28,4 +32,21 @@ header {
 }
 .planetlist {
     background-color: black;
+    opacity: .75;
+    width: 25%;
+    padding: 25px;
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+    
+}
+.planetlist a {
+    color:rgba(255, 255,255, 1);
+    transition: all 0.3s ease 0s;
+    
+}
+.planetlist a:hover {
+    color: teal;
 }

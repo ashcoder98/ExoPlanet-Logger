@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=planet.name%></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
-  <style>
-      body{
-          background-image: url("https://i.imgur.com/5L59AGa.jpg");
-          background-size: cover;
-      }
-  </style>
+    <style>
+        body {
+            background-image: url("https://i.imgur.com/5L59AGa.jpg");
+            background-size: cover;
+        }
+    </style>
 </head>
+
 <body class="background-show">
     <header>
-   <h1>Exoplanet Logger</h1> 
-</header>
-<div class="show"> 
-         <h1><%=planet.name%></h1>
+        <nav>
+            <h1>Exoplanet Logger</h1>
+            <a class ="home-icon-show" href="/exoplanets"><i class="fas fa-user-astronaut"></i></a>
+        </nav>
+
+    </header>
+    <div class="show">
+        <h1><%=planet.name%></h1>
         <h2>Planet Environment: </h2>
-    
-             <p><%=planet.environment%></p>
+
+        <p><%=planet.environment%></p>
         <h2>Planet Lifeforms:
         </h2>
-             <p><%=planet.lifeforms%></p>
-        <h2>Liquid Water: 
+        <p><%=planet.lifeforms%></p>
+        <h2>Liquid Water:
         </h2>
-            <p><%=planet.water%></p>
-        <h2>Habitable (Goldilocks) zone: 
+        <p><%=planet.water%></p>
+        <h2>Habitable (Goldilocks) zone:
         </h2>
-           <p><%=planet.habitable%></p> 
+        <p><%=planet.habitable%></p>
         <div class="edit-and-delete">
             <a id="edit" href="/exoplanets/<%=planet._id%>/edit"><button>EDIT</button></a>
-        <form class="form"action="/exoplanets/<%=planet._id%>?_method=DELETE" method="POST">
-            <input type="submit" value="DELETE"/>
-     </form>
+            <form class="form" action="/exoplanets/<%=planet._id%>?_method=DELETE" method="POST">
+                <input type="submit" value="DELETE" />
+            </form>
+        </div>
     </div>
-</div>
 </body>
+
 </html>

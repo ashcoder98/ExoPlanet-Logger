@@ -1,8 +1,8 @@
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} */
+* {
+    font-family: 'Orbitron', sans-serif;
+
+
+}
 body {
     background-image: url("https://i.imgur.com/BVUc0DZ.jpg");
     background-size: cover;
@@ -58,7 +58,6 @@ header {
     color: white;
     margin-top: 200px;
     margin-left: 15px;
-    border: 2px solid white;
     width: 450px;
     padding-left: 10px;
     
@@ -76,4 +75,13 @@ header {
 .form {
     margin-right: 125px;
     margin-bottom: 10px;
+}
+.home-icon-show {
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    /* margin-right: 500px; */
 }

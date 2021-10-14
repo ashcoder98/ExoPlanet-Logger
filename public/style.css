@@ -50,3 +50,30 @@ header {
 .planetlist a:hover {
     color: teal;
 }
+/* Show route */
+.background-show {
+    background-color: white;
+}
+.show {
+    color: white;
+    margin-top: 200px;
+    margin-left: 15px;
+    border: 2px solid white;
+    width: 450px;
+    padding-left: 10px;
+    
+}
+.edit-and-delete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#edit{
+    margin-left: 75px;
+    margin-bottom: 10px;
+    
+}
+.form {
+    margin-right: 125px;
+    margin-bottom: 10px;
+}

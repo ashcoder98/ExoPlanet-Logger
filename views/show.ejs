@@ -5,17 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=planet.name%></title>
+    <link rel="stylesheet" href="/style.css">
+  <style>
+      body{
+          background-image: url("https://i.imgur.com/5L59AGa.jpg");
+          background-size: cover;
+      }
+  </style>
 </head>
-<body>
-    <header><%=planet.name%>
-        <form action="/exoplanets/<%=planet._id%>?_method=DELETE" method="POST">
+<body class="background-show">
+    <header>
+   <h1>Exoplanet Logger</h1> 
+</header>
+<div class="show"> 
+         <h1><%=planet.name%></h1>
+        <h2>Planet Environment: </h2>
+    
+             <p><%=planet.environment%></p>
+        <h2>Planet Lifeforms:
+        </h2>
+             <p><%=planet.lifeforms%></p>
+        <h2>Liquid Water: 
+        </h2>
+            <p><%=planet.water%></p>
+        <h2>Habitable (Goldilocks) zone: 
+        </h2>
+           <p><%=planet.habitable%></p> 
+        <div class="edit-and-delete">
+            <a id="edit" href="/exoplanets/<%=planet._id%>/edit"><button>EDIT</button></a>
+        <form class="form"action="/exoplanets/<%=planet._id%>?_method=DELETE" method="POST">
             <input type="submit" value="DELETE"/>
      </form>
-     <a href="/exoplanets/<%=planet._id%>/edit"><button>EDIT</button></a>
-    </header>
-    <h2>Planet Environment: <%=planet.environment%></h2>
-    <h2>Planet Lifeforms: <%=planet.lifeforms%></h2>
-    <h2>Liquid Water: <%=planet.water%></h2>
-    <h2>Habitable (Goldilocks) zone: <%=planet.habitable%></h2>
+    </div>
+</div>
 </body>
 </html>

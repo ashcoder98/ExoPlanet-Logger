@@ -4,20 +4,20 @@
 
 }
 body {
-    background-image: url("https://i.imgur.com/BVUc0DZ.jpg");
+    background-image: url("https://i.imgur.com/hx2uzIx.jpg");
     background-size: cover;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    /* background-color: black; */
     padding: 30px 10%;
-    opacity: .75;
+    /* opacity: .5; */
 }
 header {
     align-items: center;
-   
+   font-size: 1.5rem;
     color: rgba(255, 255,255, 1)
 }
 /* .main {
@@ -31,15 +31,16 @@ header {
     color: teal;
 }
 .planetlist {
-    background-color: black;
-    opacity: .75;
+    /* background-color: black;
+    opacity: .75; */
     width: 25%;
     padding: 25px;
     text-align: center;
     margin-top: 25px;
     color: white;
-    text-decoration: underline;
+    font-weight: bold;
     font-style: italic;
+    margin-left: 90px;
     
 }
 .planetlist a {
@@ -66,6 +67,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    transition: all 0.3s ease 0s;
+}
+.edit-and-delete:hover {
+    color: teal;
 }
 #edit{
     margin-left: 75px;
@@ -83,5 +88,18 @@ header {
     font-size: 2rem;
     color: white;
     text-align: center;
+    transition: all 0.3s ease 0s;
     /* margin-right: 500px; */
+}
+.home-icon-show:hover {
+    color: teal;
+}
+/* NEW AND EDIT ROUTES */
+.new-planet {
+    color: white;
+    margin-top: 200px;
+    margin-left: 150px;
+    width: 500px;
+    padding-left: 10px;
+    font-size: 1.45rem;
 }

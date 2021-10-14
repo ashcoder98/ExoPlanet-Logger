@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/style.css">
     <style>
         body {
-            background-image: url("https://i.imgur.com/h3TjSwx.jpg");
+            background-image: url("https://i.imgur.com/nI32OQY.jpg");
             background-size: cover;
         }
     </style>
@@ -26,6 +26,7 @@
         </nav>
     </header>
     <form class="new-planet" action="/exoplanets/<%=planet._id%>?_method=PUT" method="POST">
+        <h2>What would you like to edit?</h2>
         Planet name: <input type="text" name="name" /><br>
         Planet environment: <input type="text" name="environment" /><br>
         Lifeforms: <input type="text" name="lifeforms" /><br>

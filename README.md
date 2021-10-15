@@ -12,9 +12,9 @@ An app to record to your exoplanet discoveries.
 
 ## Screenshots
 ![Live Server Screenshot](./img/Homepage.png)
-![Live Server Screenshot](./img/Show-route.png)
+<!-- ![Live Server Screenshot](./img/Show-route.png)
 ![Live Server Screenshot](./img/Create-route.png)
-![Live Server Screenshot](./img/Edit-route.png)
+![Live Server Screenshot](./img/Edit-route.png) -->
 
 ## Deployed App Link
 https://exoplanet-logger.herokuapp.com/exoplanets

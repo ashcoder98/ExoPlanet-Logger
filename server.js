@@ -32,6 +32,9 @@ app.use(methodOverride('_method'));
 //              CONTROLLER
 // ====================================
 app.use('/exoplanets', planetController);
+app.get('/', (req, res)=>{
+    res.redirect('/exoplanets')
+})
 
 // ====================================
 //              LISTENER

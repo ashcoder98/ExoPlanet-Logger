@@ -14,7 +14,7 @@ An app to record to your exoplanet discoveries.
 - <https://fontawesome.com/>
 
 ## Screenshots
-![Live Server Screenshot](./img/Homepage.png)
+![Live Server Screenshot](./img/Homepage.jpeg)
 ![Live Server Screenshot](./img/Show-route.png)
 ![Live Server Screenshot](./img/Create-route.png)
 ![Live Server Screenshot](./img/Edit-route.png)

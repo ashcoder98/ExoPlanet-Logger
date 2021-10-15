@@ -17,7 +17,7 @@ An app to record to your exoplanet discoveries.
 ![Live Server Screenshot](./img/Edit-route.png)
 
 ## Deployed App Link
-
+https://exoplanet-logger.herokuapp.com/exoplanets
 ## Enhancements for the future
 -Have a random exo-planet picture be displayed everytime you create or edit a planet.
 -Authentication to create/edit a planet

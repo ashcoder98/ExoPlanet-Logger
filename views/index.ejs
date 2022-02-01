@@ -18,19 +18,22 @@
         <nav>
         <h1 class="main">Exoplanet Logger<h1>
             
-        <a id="link" href="/exoplanets/new">Log Your Discovery Here</a>
-    </nav>
-</header>
-    <div class="planetlist">
-        <h2>List of Exoplanets</h2>
-        <% planets.forEach(planet => { %>
-        <div class="planet">
-            <a href="/exoplanets/<%=planet._id; %>">
-                <h2><%=planet.name; %></h2>
-            </a>
-            <%}) %>
-        </div>
-    </div>
+        </nav>
+    </header>
+    <section>
+
+        <div class="planetlist">
+            <a id="link" href="/exoplanets/new"><h1>Log Your Discovery Here</h1></a>
+            <h2>List of Exoplanets</h2>
+            <% planets.forEach(planet => { %>
+                <div class="planet">
+                    <a href="/exoplanets/<%=planet._id; %>">
+                        <h2><%=planet.name; %></h2>
+                    </a>
+                    <%}) %>
+                </div>
+            </div>
+        </section>
 
 </div>
 </body>

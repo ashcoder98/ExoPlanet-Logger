@@ -17,18 +17,18 @@
     <header>
         <nav>
         <h1 class="main">Exoplanet Logger<h1>
-            
+            <a class="home-icon-show" id="astro" href="/exoplanets"><i class="fas fa-user-astronaut"></i></a>
         </nav>
     </header>
     <section>
 
         <div class="planetlist">
-            <a id="link" href="/exoplanets/new"><h1>Log Your Discovery Here</h1></a>
+            <a id="link" href="/exoplanets/new"><h1>Log Your Discovery</h1></a>
             <h2>List of Exoplanets</h2>
             <% planets.forEach(planet => { %>
                 <div class="planet">
                     <a href="/exoplanets/<%=planet._id; %>">
-                        <h2><%=planet.name; %></h2>
+                        <h3><%=planet.name; %></h3>
                     </a>
                     <%}) %>
                 </div>

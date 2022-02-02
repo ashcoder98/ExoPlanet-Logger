@@ -11,7 +11,7 @@ body {
 nav {
     display: flex;
     justify-content: center;
-    padding: 30px 10%;   
+    align-items: center;
 }
 header {
     align-items: center;
@@ -19,40 +19,39 @@ header {
     color: rgba(255, 255,255, 1)
 }
 #link {
-    /* color: rgba(255, 255,255, 1); */
     display: flex;
     justify-content: center;
-    transition: all 0.3s ease 0s;
+    transition: all .6s ease 0s;
     text-decoration: none;
-    border: 3px solid;
-    /* background-color: white; */
-    /* width: 50%; */
+    border: 3px solid orange;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 5px;
     align-items: center;
 }
 #link:hover {
-    color: rgb(25, 25, 253);
-    background-color: rgb(192, 192, 192);
+    color: rgb(197, 128, 0);
+    border: 3px solid rgb(197, 128, 0);
 }
 .planetlist {
-    /* width: 25%; */
     padding: 25px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 25px;
     background-color: rgb(128, 128, 128, .6);
     border: 1px solid;
     border-radius: 15px;
-    width: 75%;
     color: white;
     font-weight: bold;
     font-style: italic;
-    /* margin-left: 90px; */
+
     
 }
 .planetlist a {
-    /* color:rgba(255, 255,255, 1); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s ease 0s;
     color: white;
     
@@ -64,23 +63,34 @@ section {
     display: flex;
     justify-content: center;
 }
+
 /* Show route */
-.background-show {
-    background-color: white;
-}
 .show {
     color: white;
-    margin-top: 200px;
-    margin-left: 15px;
-    width: 450px;
-    padding-left: 10px;
-    background-color: rgb(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    /* font-size: 1.45rem; */
+    align-items: center;
+    /* padding: 10px; */
+    background-color: rgb(255, 255, 255, .2);
     border: 1px solid;
     border-radius: 15px;
-    
 }
+@media (max-width: 35rem) {
+    .show {
+        width: 80%;
+    }
+}
+.show p {
+    font-size: 1.2rem;
+}
+
 .edit-and-delete{
     display: flex;
+    padding: 5px;
+    margin: 5px;
     flex-direction: row;
     justify-content: space-between;
     transition: all 0.3s ease 0s;
@@ -88,14 +98,8 @@ section {
 .edit-and-delete:hover {
     color: teal;
 }
-#edit{
-    margin-left: 75px;
-    margin-bottom: 10px;
-    
-}
-.form {
-    margin-right: 125px;
-    margin-bottom: 10px;
+#edit {
+    margin-right: 10px;
 }
 .home-icon-show {
  display: flex;
@@ -105,17 +109,31 @@ section {
     color: white;
     text-align: center;
     transition: all 0.3s ease 0s;
+    margin-left: 5px
     /* margin-right: 500px; */
 }
 .home-icon-show:hover {
     color: teal;
 }
+#astro {
+    text-align: center;
+}
 /* NEW AND EDIT ROUTES */
 .new-planet {
     color: white;
-    margin-top: 200px;
-    margin-left: 150px;
-    width: 600px;
-    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
     font-size: 1.45rem;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255, .3);
+    border: 1px solid;
+    border-radius: 15px;
+}
+@media (max-width: 35rem) {
+    .new-planet {
+        width: 80%;
+    }
 }

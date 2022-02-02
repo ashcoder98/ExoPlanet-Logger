@@ -25,15 +25,18 @@
             <a class="home-icon-show" href="/exoplanets"><i class="fas fa-user-astronaut"></i></a>
         </nav>
     </header>
-    <form class="new-planet" action="/exoplanets/<%=planet._id%>?_method=PUT" method="POST">
-        <h2>What would you like to edit?</h2>
-        Planet name: <input type="text" name="name" /><br>
-        Planet environment: <input type="text" name="environment" /><br>
-        Lifeforms: <input type="text" name="lifeforms" /><br>
-        Water: <input type="checkbox" name="water" /><br>
-        Habitable-zone: <input type="checkbox" name="habitable" /><br>
-        <input type="submit" name="" value="Edit Planet" />
-    </form>
+    <section>
+
+        <form class="new-planet" action="/exoplanets/<%=planet._id%>?_method=PUT" method="POST">
+            <h2>What would you like to edit?</h2>
+            Planet name: <input type="text" name="name" /><br>
+            Planet environment: <input type="text" name="environment" /><br>
+            Lifeforms: <input type="text" name="lifeforms" /><br>
+            Water: <input type="checkbox" name="water" /><br>
+            Habitable-zone: <input type="checkbox" name="habitable" /><br>
+            <input type="submit" name="" value="Edit Planet" />
+        </form>
+    </section>
 </body>
 
 </html>

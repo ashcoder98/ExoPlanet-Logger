@@ -1,6 +1,7 @@
 # Exoplanet Logger
-An app to record to your exoplanet discoveries.
-
+This is a Full-CRUD, Full-Stack Restful application utilizing MongoDB for a database with a purpose to allow users to record exo-planets they discover in the cosmos. They can indicate features of the discovery such as if it has water, if they think it is potentially habitable for life, among other descriptive features! Below you will find a link to the live application!
+## Deployed App Link
+https://exoplanet-logger.herokuapp.com/exoplanets
 ## Technologies used
 - HTML
 - CSS
@@ -19,8 +20,5 @@ An app to record to your exoplanet discoveries.
 ![Live Server Screenshot](./img/Create-route.png)
 ![Live Server Screenshot](./img/Edit-route.png)
 
-## Deployed App Link
-https://exoplanet-logger.herokuapp.com/exoplanets
 ## Enhancements for the future
--Have a random exo-planet picture be displayed everytime you create or edit a planet.
--Authentication to create/edit a planet
+-Authentication to create/edit a planet.

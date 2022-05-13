@@ -1,5 +1,5 @@
 # Exoplanet Logger
-This is a Full-CRUD, Full-Stack Restful application utilizing MongoDB for a database. The purpose of the app is to allow users to record exo-planets they discover in the cosmos. They can indicate features of the discovery such as if it has water, if they think it is potentially habitable for life, among other descriptive features! Below you will find a link to the live application!
+This is a Full-CRUD, Full-Stack RESTful application utilizing MongoDB for a database. The purpose of the app is to allow users to record exo-planets they discover in the cosmos. They can indicate features of the discovery such as if it has water, if they think it is potentially habitable for life, among other descriptive features! Below you will find a link to the live application!
 ## Deployed App Link
 https://exoplanet-logger.herokuapp.com/exoplanets
 ## Technologies used
